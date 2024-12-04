@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +12,10 @@
   "dependencies": {
     "@react-three/drei": "^9.119.0",
     "@react-three/fiber": "^8.17.10",
+    "glslify-loader": "^2.0.0",
     "next": "^13.5.7",
+    "next-transpile-modules": "^10.0.1",
+    "raw-loader": "^4.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "three": "^0.171.0"

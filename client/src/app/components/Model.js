@@ -1,7 +1,7 @@
 "use client";
 
-import { testVertexShader } from "./shaders/test/vertex.js";
-import { testFragmentShader } from "./shaders/test/fragment.js";
+import testVertexShader from "./shaders/test/vertex.glsl";
+import testFragmentShader from "./shaders/test/fragment.glsl";
 
 export default function Model() {
   return (
