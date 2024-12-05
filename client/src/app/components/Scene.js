@@ -16,7 +16,11 @@ export default function Scene() {
     <>
       <Canvas
         shadows
-        gl={{ antialias: true, pixelRatio: window.devicePixelRatio }}
+        gl={{
+          antialias: true,
+          pixelRatio:
+            typeof window !== "undefined" ? window.devicePixelRatio : 1,
+        }}
         style={{ height: "100vh", width: "100%" }}
       >
         <Suspense fallback={null}>

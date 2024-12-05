@@ -1,8 +1,9 @@
 
 precision mediump float;
 
-uniform float u_time;
-
-void main() {
-    gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);
-}
+uniform float time;
+    uniform vec3 color;
+    varying vec2 vUv;
+    void main() {
+      gl_FragColor.rgba = vec4(0.5 + 0.3 * sin(vUv.yxx + time) + color, 1.0);
+    }
